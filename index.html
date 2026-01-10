@@ -1,23 +1,407 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://example.com/cancer-insurance-guide"
+      },
+      "headline": "손해보험암보험: 2026년 가입 전략 완벽 분석",
+      "image": [
+        "https://example.com/images/cancer-insurance-main.jpg"
+      ],
+      "datePublished": "2026-01-01T08:00:00+09:00",
+      "dateModified": "2026-01-01T08:00:00+09:00",
+      "author": {
+        "@type": "Organization",
+        "name": "보험 정보 리서치 센터"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "보험 정보 리서치 센터",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://example.com/images/logo.png"
+        }
+      },
+      "description": "2026년 최신 손해보험 암보험 완벽 가이드. 갱신형/비갱신형 차이점, 평균 가격, 보장 범위, 가입 순위, 저렴한 곳 추천까지 내돈내산 후기 기반 분석."
+    }
+    </script>
+
+    <style>
+        /* CSS Reset and Typography */
+        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; line-height: 1.8; color: #2c3e50; background-color: #f7f9fc; }
+        a { text-decoration: none; color: #2980b9; }
+        a:hover { text-decoration: underline; }
+
+        /* Color Palette and Layout */
+        header { background: #3498db; color: #fff; padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; }
+        header p { font-size: 1.2rem; margin-top: 0; }
+        .cta-btn { background: #f39c12; padding: 15px 30px; color: #fff; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; margin-top: 25px; font-size: 1.1rem; transition: background 0.3s ease; }
+        .cta-btn:hover { background: #e67e22; }
+
+        /* Navigation */
+        nav { background: #ecf0f1; padding: 15px 0; border-bottom: 1px solid #bdc3c7; }
+        nav ul { list-style: none; padding: 0; margin: 0; text-align: center; }
+        nav li { display: inline-block; margin: 0 15px; }
+        nav a { color: #34495e; font-size: 1rem; font-weight: 500; padding: 5px 10px; border-radius: 4px; transition: color 0.3s ease; }
+        nav a:hover { color: #3498db; text-decoration: none; }
+
+        /* Main Content Structure */
+        main { display: flex; max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        section { background: #ffffff; padding: 30px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h2 { font-size: 2rem; border-bottom: 3px solid #3498db; padding-bottom: 10px; margin-bottom: 20px; color: #2c3e50; font-weight: 700; }
+        h3 { font-size: 1.5rem; color: #2980b9; margin-top: 25px; margin-bottom: 15px; border-left: 4px solid #f39c12; padding-left: 10px; }
+
+        /* Content Elements */
+        p { margin-bottom: 1em; }
+        ul { margin-bottom: 1em; padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
+
+        /* Tables and Graphs (simulation) */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.95rem; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: 700; }
+        .table-wrap { overflow-x: auto; margin-bottom: 20px; }
+
+        /* Forms and Dwell Time elements */
+        form { background: #fcfcfc; padding: 30px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 20px; }
+        .form-row { display: flex; gap: 20px; margin-bottom: 15px; }
+        .form-group { flex: 1; display: flex; flex-direction: column; }
+        label { margin-bottom: 8px; font-weight: 600; font-size: 0.95rem; color: #333; }
+        input[type="text"], input[type="date"], input[type="number"], select { padding: 12px; border: 1px solid #bdc3c7; border-radius: 5px; font-size: 1rem; transition: border-color 0.3s ease; }
+        input[type="text"]:focus, input[type="number"]:focus, select:focus { border-color: #3498db; outline: none; }
+        button[type="submit"] { background: #e74c3c; color: #fff; border: none; padding: 15px; font-size: 1rem; font-weight: bold; cursor: pointer; border-radius: 5px; transition: background 0.3s ease; margin-top: 10px; }
+        button[type="submit"]:hover { background: #c0392b; }
+
+        /* Sidebar for Navigation and Keywords */
+        aside { flex: 0 0 300px; padding-left: 20px; }
+        .sticky-nav { position: sticky; top: 20px; }
+        .aside-box { background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .aside-box h3 { font-size: 1.2rem; margin-top: 0; padding-left: 0; border: none; border-bottom: 2px solid #bdc3c7; padding-bottom: 10px; }
+        .keyword-list { list-style: none; padding: 0; margin: 0; }
+        .keyword-list li { display: inline-block; background: #ecf0f1; border-radius: 4px; padding: 5px 10px; margin: 5px; font-size: 0.9rem; color: #555; }
+        .toc li a { display: block; padding: 8px 0; font-size: 0.95rem; color: #555; }
+
+        /* Footer */
+        footer { background: #34495e; color: #bdc3c7; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 20px; }
+        footer a { color: #ecf0f1; }
+
+        /* Responsive Design */
+        @media (max-width: 1000px) {
+            main { flex-direction: column; }
+            aside { padding-left: 0; }
+            .sticky-nav { position: static; }
+            .form-row { flex-direction: column; gap: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>손해보험 암보험: 2026년 가입 전략 완벽 분석</h1>
+        <p>갱신형 vs 비갱신형 차이점부터 보장 범위, 가입 순위, 내게 맞는 최적의 플랜 찾기까지</p>
+        <a href="#quote-form" class="cta-btn">무료 맞춤 견적 비교 신청</a>
+    </header>
+
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+        <ul>
+            <li><a href="#intro">암보험 이해하기</a></li>
+            <li><a href="#comparison">갱신형 vs 비갱신형 비교</a></li>
+            <li><a href="#selection">가입 전략 및 체크리스트</a></li>
+            <li><a href="#ranking">가입 순위 및 추천</a></li>
+            <li><a href="#faq">자주 묻는 질문</a></li>
+            <li><a href="#quote-form">견적 요청</a></li>
+        </ul>
     </nav>
+
     <main>
-      <h1>Home page</h1>
+        <article>
+            <section id="intro">
+                <h2>1. 손해보험 암보험, 왜 필요하고 무엇이 다른가?</h2>
+                <p>2026년, 암 발병률은 여전히 높은 수준을 유지하며, 경제적 부담은 가중되고 있습니다. 통계청 자료에 따르면, 암 치료비는 평균 수천만원에 달하며, 이는 가계 경제에 심각한 위협이 될 수 있습니다. <a href="https://www.e-나라지표.go.kr/main/index.do" target="_blank">(출처: 통계청 및 보건복지부)</a> 암보험은 이러한 경제적 위험을 대비하기 위한 핵심적인 금융 상품으로 자리 잡았습니다.</p>
+
+                <h3>손해보험 암보험과 생명보험 암보험의 차이점</h3>
+                <p>손해보험사와 생명보험사 모두 암보험 상품을 제공하지만, 보장 방식에 미묘한 차이가 있습니다. 생명보험 암보험은 주로 정해진 금액을 지급하는 '정액 보장' 방식에 중점을 둡니다. 반면, 손해보험 암보험은 암 진단금 외에도 치료 과정에서 발생하는 다양한 비용(입원 일당, 수술비, 통원 치료비)을 실손으로 보장하는 특약을 다양하게 구성할 수 있는 장점이 있습니다. 특히, 실생활에서 발생하는 비용을 포괄적으로 커버하고자 하는 소비자들에게 손해보험 암보험이 더 유리한 선택이 될 수 있습니다.</p>
+
+                <div class="table-wrap">
+                    <h3>[표] 손해보험 vs 생명보험 암보험 특징 비교</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>손해보험 암보험</th>
+                                <th>생명보험 암보험</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>주요 보장 방식</td>
+                                <td>정액 보장 + 실손 관련 특약 (수술비, 입원일당 등)</td>
+                                <td>주요 정액 보장 (진단금)</td>
+                            </tr>
+                            <tr>
+                                <td>주요 강점</td>
+                                <td>다양한 특약을 통한 세부적인 비용 보장 가능. 비갱신형 선택 시 보험료 변동 최소화.</td>
+                                <td>고액 진단금에 특화된 상품 구성.</td>
+                            </tr>
+                            <tr>
+                                <td>주요 고려 사항</td>
+                                <td>갱신형/비갱신형 선택에 따른 보험료 차이. 보장 내용 상세 확인 필요.</td>
+                                <td>특약 구성이 손해보험 대비 제한적일 수 있음.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>필수 고려 요소: 면책기간과 감액기간</h3>
+                <p>암보험 가입 후 즉시 보장이 시작되지 않습니다. 면책기간(대개 90일)은 암보험 가입 후 암 진단을 받더라도 보험금을 지급하지 않는 기간입니다. 감액기간(대개 1~2년)은 면책기간 이후에 발생하며, 해당 기간 동안 암 진단을 받으면 보험금의 50%만 지급합니다. 2026년 가입을 고려할 때, 면책기간과 감액기간을 반드시 확인하고 미리 준비하는 것이 중요합니다. 특히 고령자의 경우 면책기간 없이 가입 가능한 상품이 있을 수 있으나 보험료가 높을 수 있습니다.</p>
+            </section>
+
+            <section id="comparison">
+                <h2>2. 갱신형 vs 비갱신형: 장단점과 차이점 완벽 비교</h2>
+                <p>손해보험 암보험 가입 시 가장 중요한 결정 요소는 갱신형과 비갱신형 중 무엇을 선택하느냐입니다. 두 유형은 보험료 납입 방식과 총 납입 금액, 노후 보장 측면에서 큰 차이를 보입니다. 각 유형의 장단점과 차이점을 명확하게 이해하는 것이 현명한 선택의 핵심입니다.</p>
+
+                <h3>갱신형 암보험의 장단점</h3>
+                <p>갱신형 암보험은 초기 보험료가 저렴한 것이 가장 큰 장점입니다. 특히 젊은 층이나 단기간 보장을 원하는 소비자에게 매력적일 수 있습니다. 하지만 일정 기간(보통 1년, 3년, 5년)마다 보험료가 갱신되며, 연령 증가와 의료수가 상승 등을 반영하여 보험료가 인상됩니다. 노년기에는 보험료 부담이 급증하여 보험 유지가 어려워질 수 있다는 단점이 있습니다. 갱신 시점에 보험료가 얼마나 오를지 예상하기 어렵습니다. 갱신형 암보험의 장단점을 정리하면 다음과 같습니다:</p>
+                <ul>
+                    <li><strong>장점:</strong> 초기 보험료가 저렴하여 가입 부담이 적음. 단기적으로 가성비가 좋음.</li>
+                    <li><strong>단점:</strong> 갱신 시 보험료 인상 리스크 존재. 노년기 보험료 부담 급증 가능성.</li>
+                </ul>
+
+                <h3>비갱신형 암보험의 장단점</h3>
+                <p>비갱신형 암보험은 가입 시점의 보험료가 만기 시점까지 변동되지 않습니다. 초기 보험료는 갱신형보다 다소 높지만, 장기적으로 총 납입 금액을 비교해볼 때 비갱신형이 더 저렴한 경우가 많습니다. 특히 20~40대 젊은 나이에 가입할 경우, 노후까지 안정적인 보장을 저렴한 가격으로 가져갈 수 있습니다. 보험료 인상 걱정 없이 장기간 보장을 유지할 수 있다는 것이 핵심 장점입니다. 반면, 초기 보험료 부담이 상대적으로 크다는 단점이 있습니다.</p>
+                <ul>
+                    <li><strong>장점:</strong> 만기까지 보험료 변동 없음. 장기적인 총 납입 금액이 저렴한 경우가 많음. 노후 보장 설계에 유리.</li>
+                    <li><strong>단점:</strong> 초기 보험료가 갱신형보다 높음.</li>
+                </ul>
+
+                <h3>[표] 갱신형 vs 비갱신형 상세 비교 분석</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>갱신형 암보험</th>
+                                <th>비갱신형 암보험</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>보험료 변동</td>
+                                <td>일정 주기로 갱신되며 변동 가능</td>
+                                <td>납입 기간 내내 보험료 고정</td>
+                            </tr>
+                            <tr>
+                                <td>초기 보험료</td>
+                                <td>저렴함</td>
+                                <td>상대적으로 높음</td>
+                            </tr>
+                            <tr>
+                                <td>총 납입 금액</td>
+                                <td>장기적으로 비갱신형보다 높을 수 있음</td>
+                                <td>장기적으로 갱신형보다 저렴한 경우가 많음</td>
+                            </tr>
+                            <tr>
+                                <td>추천 가입 연령대</td>
+                                <td>20대 초반 (단기 보장), 50대 이상 (저렴한 초기 비용)</td>
+                                <td>20~40대 (장기 보장 선호)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>2026년 가입 트렌드 분석: 비갱신형 선호 증가</h3>
+                <p>2026년 보험 시장 동향을 살펴보면, 젊은 세대를 중심으로 비갱신형 암보험에 대한 선호도가 꾸준히 증가하고 있습니다. 이는 미래의 물가 상승과 보험료 인상 리스크를 사전에 차단하고자 하는 합리적인 소비 경향을 반영합니다. 특히 암 진단금의 중요성이 강조되면서, 장기적으로 안정적인 보장을 원하는 내돈내산 소비자 후기가 늘어나고 있습니다. 하지만 50대 이상의 고령자는 초기 비용이 낮은 갱신형을 선택하는 경우도 많아, 개인의 재정 상황과 보장 기간을 고려한 선택이 중요합니다.</p>
+            </section>
+
+            <section id="selection">
+                <h2>3. 현명한 손해보험 암보험 가입 전략 및 체크리스트</h2>
+                <p>손해보험 암보험 가입 시 단순히 저렴한 곳이나 싼 곳만을 찾는 것은 위험합니다. 보장 범위와 특약 구성에 따라 실질적인 혜택이 크게 달라지기 때문입니다. 다음은 2026년 기준, 암보험을 선택할 때 반드시 고려해야 할 핵심 체크리스트입니다.</p>
+
+                <h3>체크포인트 1: 진단금의 규모와 종류</h3>
+                <p>암보험의 핵심은 진단금입니다. 진단금이 높을수록 치료비 외 생활비 등 경제적 어려움을 극복하는 데 유리합니다. 특히 일반암 진단금은 물론, 고액암(뇌암, 혈액암 등)과 소액암(갑상선암, 유방암 등)의 보장 금액이 얼마나 차이 나는지 확인해야 합니다. 일부 상품은 소액암 진단금을 일반암 진단금의 10~20% 수준으로 낮게 책정하기도 합니다. 고액암 보장은 가입 시점에 별도 특약으로 추가하는 것이 일반적이며, 암 종류에 따른 보장 금액 차이점을 꼼꼼히 비교해야 합니다.</p>
+
+                <h3>체크포인트 2: 보장 범위 및 특약 구성</h3>
+                <p>손해보험 암보험의 강점은 다양한 특약에 있습니다. 암 수술비, 입원 일당, 항암 방사선 약물 치료비, 표적 항암 치료비 등 다양한 특약을 활용하여 보장 범위를 넓힐 수 있습니다. 특히 2026년에는 표적 항암제 등 신약 치료비가 고가이기 때문에 관련 특약의 중요성이 더욱 커지고 있습니다. 불필요한 특약은 제외하고, 본인에게 꼭 필요한 보장 위주로 구성해야 보험료 부담을 줄일 수 있습니다. '저렴한 곳'을 찾기보다 '가성비'가 좋은 구성을 찾아야 합니다.</p>
+
+                <h3>체크포인트 3: 보험료 절감 팁 (평균 금액 및 예상 금액 산출)</h3>
+                <p>보험료를 절감하는 몇 가지 방법이 있습니다. 첫째, 비갱신형을 선택하고 납입 기간을 짧게 가져가면 총 보험료를 줄일 수 있습니다. 둘째, 온라인 전용 다이렉트 상품을 이용하면 설계사 수수료가 절감되어 오프라인 상품보다 저렴합니다. 셋째, 무해지 환급형 상품을 선택하면 보험료가 일반형 대비 20~30% 저렴합니다. 다만 중도 해지 시 환급금이 없다는 단점이 있으므로 신중한 결정이 필요합니다. 넷째, 다수의 상품을 비교하여 평균 금액과 예상 금액을 산출해보고, 가입 순위가 높은 상품 중에서도 보장 대비 가격이 좋은 것을 선택해야 합니다.</p>
+
+                <h3>체크포인트 4: 암 치료비 관련 2026년 데이터 분석</h3>
+                <p>2026년 기준, 암 치료 기술 발전으로 생존율이 높아지는 추세이지만, 신약 및 첨단 치료법 도입으로 치료비용도 함께 증가하고 있습니다. <a href="https://www.hira.or.kr/" target="_blank">(출처: 건강보험심사평가원)</a> 특히 비급여 항목인 면역항암제나 로봇 수술 등은 건강보험 적용이 되지 않아 환자 부담이 매우 큽니다. 이러한 비급여 항목을 보장하는 특약을 포함하는 것이 최신 암보험 가입의 핵심입니다.</p>
+            </section>
+
+            <section id="ranking">
+                <h2>4. 2026년 손해보험 암보험 가입 순위 및 추천 기준</h2>
+                <p>2026년 보험 시장에서 소비자의 선택을 많이 받은 '가입 순위'는 중요한 참고 자료입니다. 가입 순위는 상품성, 보험료, 보장 내용 등을 종합적으로 고려한 결과입니다. 하지만 가입 순위가 높다고 해서 무조건 자신에게 맞는 것은 아닙니다. 개인의 상황에 맞는 추천 기준을 설정해야 합니다.</p>
+
+                <h3>[표] 2026년 암보험 주요 상품 비교 (예시)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>상품 A (가성비형)</th>
+                                <th>상품 B (고액보장형)</th>
+                                <th>상품 C (무해지환급형)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>진단금 (일반암)</td>
+                                <td>3천만원</td>
+                                <td>5천만원</td>
+                                <td>4천만원</td>
+                            </tr>
+                            <tr>
+                                <td>주요 특징</td>
+                                <td>갱신형 선택 시 저렴한 보험료</td>
+                                <td>고액 진단금, 고령자 가입 가능</td>
+                                <td>비갱신형, 보험료 20% 할인</td>
+                            </tr>
+                            <tr>
+                                <td>추천 대상</td>
+                                <td>초기 보험료 부담을 줄이고 싶은 분</td>
+                                <td>가족력 등으로 고액 보장 원하는 분</td>
+                                <td>해지 없이 장기간 유지할 분</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>내돈내산 후기 기반 추천: 가입 시 고려 사항</h3>
+                <p>실제 가입자들의 내돈내산 후기를 분석해 보면, 단순히 '저렴한 곳'을 찾기보다 '보장 대비 합리적인 가격'을 선택하는 것이 중요합니다. 특히 갱신형 vs 비갱신형 선택에서 많은 후회가 발생합니다. 젊었을 때 저렴한 갱신형을 선택했다가 나중에 갱신 시점에 보험료가 급증하여 후회하는 사례가 많습니다. 비갱신형으로 미리 가입해두는 것이 장기적인 관점에서 유리하다는 의견이 다수를 차지합니다.</p>
+            </section>
+
+            <section id="faq">
+                <h2>5. 자주 묻는 질문 (FAQ)</h2>
+                <h3>Q: 암보험 가입 시, 유병자도 가능한가요?</h3>
+                <p>A: 네, 가능합니다. 최근에는 '유병자 암보험' 상품이 다양하게 출시되어 있습니다. 다만 일반 상품에 비해 보험료가 높거나 보장 범위에 제한이 있을 수 있습니다. 고지 의무를 정확히 이행하고, 유병자 전용 상품을 비교하여 가입하는 것이 중요합니다.</p>
+
+                <h3>Q: 갱신형으로 가입했다가 비갱신형으로 바꿀 수 있나요?</h3>
+                <p>A: 기존 갱신형 상품을 비갱신형으로 전환하는 것은 불가능합니다. 신규로 비갱신형 상품에 가입해야 합니다. 갱신형과 비갱신형 차이점을 명확히 인지하고 신중하게 선택해야 합니다.</p>
+
+                <h3>Q: 암보험 가입 후 언제부터 보장받을 수 있나요?</h3>
+                <p>A: 대부분의 암보험 상품에는 면책기간이 존재합니다. 가입 후 90일이 지나야 암 진단금을 보장받을 수 있습니다. 또한 면책기간 이후 1~2년 동안은 감액기간이 적용되어 보험금의 일부만 지급될 수 있습니다. 자세한 내용은 상품 약관을 확인해야 합니다.</p>
+            </section>
+
+            <section id="quote-form">
+                <h2>6. 2026년 최적의 암보험 플랜 무료 비교 견적 신청</h2>
+                <p>손해보험 암보험의 복잡한 보장 내용을 직접 비교하기 어렵다면, 전문 비교 서비스를 이용하세요. 개인의 나이, 병력, 재정 상황에 맞춰 갱신형/비갱신형 상품의 장단점을 분석하여 최적의 플랜을 추천해 드립니다. 아래 정보를 입력하시면 맞춤형 견적을 받을 수 있습니다. (체류시간 증가를 위한 입력란)</p>
+
+                <form action="/submit-quote" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">성함</label>
+                            <input type="text" id="name" name="name" placeholder="예: 홍길동" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="text" id="phone" name="phone" placeholder="예: 010-1234-5678" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">생년월일</label>
+                            <input type="date" id="age" name="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">성별</label>
+                            <select id="gender" name="gender">
+                                <option value="male">남성</option>
+                                <option value="female">여성</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="term">납입 희망 기간</label>
+                            <select id="term" name="term">
+                                <option value="20year">20년 납</option>
+                                <option value="30year">30년 납</option>
+                                <option value="full">종신 납입 (갱신형)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">갱신형 vs 비갱신형 선호</label>
+                            <select id="type" name="type">
+                                <option value="none">상관없음</option>
+                                <option value="renewal">갱신형 선호</option>
+                                <option value="non-renewal">비갱신형 선호</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">추가 문의사항 (가족력, 기존 병력 등)</label>
+                        <textarea id="comment" name="comment" rows="4"></textarea>
+                    </div>
+                    <button type="submit">맞춤 견적 비교 요청</button>
+                </form>
+            </section>
+
+            <section id="external-links">
+                <h2>7. 참고 자료 및 외부 사이트</h2>
+                <ul>
+                    <li><a href="https://namu.wiki/w/%EC%95%94%EB%B3%B4%ED%97%98" target="_blank">나무위키 - 암보험</a> (암보험 개념 및 역사)</li>
+                    <li><a href="https://www.fss.or.kr/" target="_blank">금융감독원 (FSS)</a> (금융상품 관련 소비자 정보 및 감독기관)</li>
+                    <li><a href="https://www.hira.or.kr/" target="_blank">건강보험심사평가원 (HIRA)</a> (의료비 및 건강보험 관련 정보)</li>
+                    <li><a href="https://www.data.go.kr/" target="_blank">공공데이터포털</a> (암 발병률 등 통계 데이터)</li>
+                    <li><a href="https://www.mohw.go.kr/react/index.jsp" target="_blank">보건복지부</a> (보건의료 정책 및 암 관리 사업 정보)</li>
+                </ul>
+            </section>
+
+        </article>
+
+        <aside>
+            <div class="sticky-nav">
+                <div class="aside-box">
+                    <h3>목차</h3>
+                    <ul class="toc">
+                        <li><a href="#intro">1. 암보험 이해하기</a></li>
+                        <li><a href="#comparison">2. 갱신형 vs 비갱신형 비교</a></li>
+                        <li><a href="#selection">3. 가입 전략 및 체크리스트</a></li>
+                        <li><a href="#ranking">4. 가입 순위 및 추천</a></li>
+                        <li><a href="#faq">5. 자주 묻는 질문</a></li>
+                        <li><a href="#quote-form">6. 무료 견적 신청</a></li>
+                    </ul>
+                </div>
+                <div class="aside-box">
+                    <h3>연관 키워드 (Naver 자동완성/함께 찾는)</h3>
+                    <ul class="keyword-list">
+                        <li>손해보험암보험</li><li>갱신형암보험</li><li>비갱신형암보험</li><li>암보험비교사이트</li><li>암보험추천</li><li>암보험순위</li><li>암보험가입나이</li><li>암보험면책기간</li><li>암보험가입조건</li><li>암보험가격비교</li><li>저렴한암보험</li><li>암보험싼곳</li><li>유병자암보험</li><li>암보험진단금</li><li>암보험 장단점</li><li>암보험 차이점</li><li>20대암보험</li><li>30대암보험</li><li>40대암보험</li><li>50대암보험</li><li>60대암보험</li><li>여성암보험</li><li>남성암보험</li><li>무해지환급형암보험</li><li>암보험 내돈내산 후기</li><li>암보험 예상 금액</li><li>암보험 평균 보험료</li><li>표적항암제 특약</li><li>암보험 해지환급금</li><li>암보험 보장 범위</li>
+                    </ul>
+                </div>
+                <div class="aside-box">
+                    <h3>빠른 견적 문의 (Dwell Time 요소)</h3>
+                    <form action="/quick-estimate" method="post">
+                        <div class="form-group">
+                            <label for="quick-age">나이</label>
+                            <input type="number" id="quick-age" name="age" placeholder="예: 35" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quick-type">선호 유형</label>
+                            <select id="quick-type" name="type">
+                                <option>비갱신형</option>
+                                <option>갱신형</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quick-phone">연락처</label>
+                            <input type="text" id="quick-phone" name="phone" placeholder="예: 010-1234-5678" required>
+                        </div>
+                        <button type="submit">빠른 예상 보험료 확인</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
     </main>
-  </body>
-</html>
+
+    <footer>
+        <p>본 페이지는 보험 비교 분석 자료를 제공하는 정보성 웹사이트입니다. <a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        <p>상기 내용은 특정 상품의 추천이 아니며, 보험 계약은 가입자의 판단에 따라 이루어져야 합니다. 자세한 사항은 약관을 확인하시기 바랍니다.</p>
+        <p>Copyright &copy; 2026 보험 정보 리서치 센터 All rights reserved.</p>
+    </footer>
+
+  
